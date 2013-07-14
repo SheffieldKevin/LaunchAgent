@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MachServices</key>
+	<dict>
+		<key>U6TV63RN87.com.yvs.LaunchAgent</key>
+		<true/>
+	</dict>
+	<key>Label</key>
+	<string>U6TV63RN87.com.yvs.LaunchAgent</string>
+	<key>KeepAlive</key>
+	<false/>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>LimitLoadToSessionType</key>
+	<string>Aqua</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/ktam/Documents/XCode Sample Code Folder/XPC Demos/LaunchAgent/DerivedData/LaunchAgent/Build/Products/Debug/U6TV63RN87.com.yvs.LaunchAgent.app/Contents/MacOS/U6TV63RN87.com.yvs.LaunchAgent</string>
+	</array>
+</dict>
+</plist>

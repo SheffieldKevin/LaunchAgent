@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0D650E178B2E3400806150 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B483771576E05600A43F96 /* main.m */; };
+		6E0D6512178B2E3400806150 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 728BAAC41577ED3200632353 /* ServiceManagement.framework */; };
+		6E0D6513178B2E3400806150 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B4836B1576E05600A43F96 /* Cocoa.framework */; };
+		6E0D6515178B2E3400806150 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72B483741576E05600A43F96 /* InfoPlist.strings */; };
+		6E0D6516178B2E3400806150 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 72B4837A1576E05600A43F96 /* Credits.rtf */; };
+		6E0D6517178B2E3400806150 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72B483801576E05700A43F96 /* MainMenu.xib */; };
+		6E9BBA0E178C2BF3001F03CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B483971576E0BA00A43F96 /* main.m */; };
+		6E9BBA0F178C2BF3001F03CC /* LaunchAgentExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B4839D1576E2B500A43F96 /* LaunchAgentExample.m */; };
+		6E9BBA11178C2BF3001F03CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B4838E1576E0BA00A43F96 /* Foundation.framework */; };
+		6E9BBA13178C2BF3001F03CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72B483931576E0BA00A43F96 /* InfoPlist.strings */; };
+		6E9BBA14178C2BF3001F03CC /* LaunchAgent.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 728BAACC1577F45800632353 /* LaunchAgent.entitlements */; };
+		6EE3A79D1790025E00C6A53B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B4837E1576E05600A43F96 /* AppDelegate.m */; };
+		6EE3A7A017903D2B00C6A53B /* LaunchAgentClient-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A79F17903D2B00C6A53B /* LaunchAgentClient-Info.plist */; };
+		6EE3A7A217903D3F00C6A53B /* LaunchAgent-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A7A117903D3F00C6A53B /* LaunchAgent-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E9BBA1A178C3C79001F03CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72B4835E1576E05600A43F96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E9BBA0C178C2BF3001F03CC;
+			remoteInfo = iDecideLaunchAgentHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E0D651D178B2E3400806150 /* LaunchAgent Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaunchAgent Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9BBA18178C2BF3001F03CC /* U6TV63RN87.com.yvs.LaunchAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = U6TV63RN87.com.yvs.LaunchAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE3A79F17903D2B00C6A53B /* LaunchAgentClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LaunchAgentClient-Info.plist"; sourceTree = "<group>"; };
+		6EE3A7A117903D3F00C6A53B /* LaunchAgent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LaunchAgent-Info.plist"; sourceTree = "<group>"; };
+		728BAAC41577ED3200632353 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		728BAACC1577F45800632353 /* LaunchAgent.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LaunchAgent.entitlements; sourceTree = "<group>"; };
+		728BAAD11578269200632353 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		72B4836B1576E05600A43F96 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		72B4836E1576E05600A43F96 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		72B4836F1576E05600A43F96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		72B483701576E05600A43F96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72B483751576E05600A43F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72B483771576E05600A43F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72B4837B1576E05600A43F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		72B4837D1576E05600A43F96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		72B4837E1576E05600A43F96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		72B483811576E05700A43F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		72B483881576E06200A43F96 /* LaunchAgentClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LaunchAgentClient.entitlements; sourceTree = "<group>"; };
+		72B4838E1576E0BA00A43F96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72B483941576E0BA00A43F96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72B483971576E0BA00A43F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72B4839C1576E2B500A43F96 /* LaunchAgentExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAgentExample.h; sourceTree = "<group>"; };
+		72B4839D1576E2B500A43F96 /* LaunchAgentExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAgentExample.m; sourceTree = "<group>"; };
+		72B483A01576E95D00A43F96 /* Interfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interfaces.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0D6511178B2E3400806150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0D6512178B2E3400806150 /* ServiceManagement.framework in Frameworks */,
+				6E0D6513178B2E3400806150 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9BBA10178C2BF3001F03CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9BBA11178C2BF3001F03CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72B4835C1576E05600A43F96 = {
+			isa = PBXGroup;
+			children = (
+				728BAAD11578269200632353 /* ReadMe.txt */,
+				72B4839F1576E90400A43F96 /* Shared Sources */,
+				72B483711576E05600A43F96 /* LaunchAgentClient */,
+				72B483901576E0BA00A43F96 /* LaunchAgent */,
+				72B4836A1576E05600A43F96 /* Frameworks */,
+				72B483681576E05600A43F96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72B483681576E05600A43F96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0D651D178B2E3400806150 /* LaunchAgent Client.app */,
+				6E9BBA18178C2BF3001F03CC /* U6TV63RN87.com.yvs.LaunchAgent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72B4836A1576E05600A43F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				728BAAC41577ED3200632353 /* ServiceManagement.framework */,
+				72B4836B1576E05600A43F96 /* Cocoa.framework */,
+				72B4838E1576E0BA00A43F96 /* Foundation.framework */,
+				72B4836D1576E05600A43F96 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72B4836D1576E05600A43F96 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72B4836E1576E05600A43F96 /* AppKit.framework */,
+				72B4836F1576E05600A43F96 /* CoreData.framework */,
+				72B483701576E05600A43F96 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		72B483711576E05600A43F96 /* LaunchAgentClient */ = {
+			isa = PBXGroup;
+			children = (
+				72B483881576E06200A43F96 /* LaunchAgentClient.entitlements */,
+				72B483771576E05600A43F96 /* main.m */,
+				72B4837D1576E05600A43F96 /* AppDelegate.h */,
+				72B4837E1576E05600A43F96 /* AppDelegate.m */,
+				72B483801576E05700A43F96 /* MainMenu.xib */,
+				72B483721576E05600A43F96 /* Supporting Files */,
+			);
+			path = LaunchAgentClient;
+			sourceTree = "<group>";
+		};
+		72B483721576E05600A43F96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3A79F17903D2B00C6A53B /* LaunchAgentClient-Info.plist */,
+				72B483741576E05600A43F96 /* InfoPlist.strings */,
+				72B4837A1576E05600A43F96 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72B483901576E0BA00A43F96 /* LaunchAgent */ = {
+			isa = PBXGroup;
+			children = (
+				728BAACC1577F45800632353 /* LaunchAgent.entitlements */,
+				72B483971576E0BA00A43F96 /* main.m */,
+				72B4839C1576E2B500A43F96 /* LaunchAgentExample.h */,
+				72B4839D1576E2B500A43F96 /* LaunchAgentExample.m */,
+				72B483911576E0BA00A43F96 /* Supporting Files */,
+			);
+			path = LaunchAgent;
+			sourceTree = "<group>";
+		};
+		72B483911576E0BA00A43F96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3A7A117903D3F00C6A53B /* LaunchAgent-Info.plist */,
+				72B483931576E0BA00A43F96 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72B4839F1576E90400A43F96 /* Shared Sources */ = {
+			isa = PBXGroup;
+			children = (
+				72B483A01576E95D00A43F96 /* Interfaces.h */,
+			);
+			name = "Shared Sources";
+			path = SharedSources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E0D650A178B2E3400806150 /* LaunchAgent Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0D651A178B2E3400806150 /* Build configuration list for PBXNativeTarget "LaunchAgent Client" */;
+			buildPhases = (
+				6E0D650D178B2E3400806150 /* Sources */,
+				6E0D6511178B2E3400806150 /* Frameworks */,
+				6E0D6514178B2E3400806150 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E9BBA1B178C3C79001F03CC /* PBXTargetDependency */,
+			);
+			name = "LaunchAgent Client";
+			productName = iDecide;
+			productReference = 6E0D651D178B2E3400806150 /* LaunchAgent Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E9BBA0C178C2BF3001F03CC /* LaunchAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E9BBA15178C2BF3001F03CC /* Build configuration list for PBXNativeTarget "LaunchAgent" */;
+			buildPhases = (
+				6E9BBA0D178C2BF3001F03CC /* Sources */,
+				6E9BBA10178C2BF3001F03CC /* Frameworks */,
+				6E9BBA12178C2BF3001F03CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchAgent;
+			productName = iDecideHelper;
+			productReference = 6E9BBA18178C2BF3001F03CC /* U6TV63RN87.com.yvs.LaunchAgent.app */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72B4835E1576E05600A43F96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Apple Inc.";
+				TargetAttributes = {
+					6E0D650A178B2E3400806150 = {
+						DevelopmentTeam = U6TV63RN87;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 72B483611576E05600A43F96 /* Build configuration list for PBXProject "LaunchAgent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72B4835C1576E05600A43F96;
+			productRefGroup = 72B483681576E05600A43F96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E0D650A178B2E3400806150 /* LaunchAgent Client */,
+				6E9BBA0C178C2BF3001F03CC /* LaunchAgent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E0D6514178B2E3400806150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE3A7A017903D2B00C6A53B /* LaunchAgentClient-Info.plist in Resources */,
+				6E0D6515178B2E3400806150 /* InfoPlist.strings in Resources */,
+				6E0D6516178B2E3400806150 /* Credits.rtf in Resources */,
+				6E0D6517178B2E3400806150 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9BBA12178C2BF3001F03CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9BBA13178C2BF3001F03CC /* InfoPlist.strings in Resources */,
+				6E9BBA14178C2BF3001F03CC /* LaunchAgent.entitlements in Resources */,
+				6EE3A7A217903D3F00C6A53B /* LaunchAgent-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E0D650D178B2E3400806150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE3A79D1790025E00C6A53B /* AppDelegate.m in Sources */,
+				6E0D650E178B2E3400806150 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9BBA0D178C2BF3001F03CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9BBA0E178C2BF3001F03CC /* main.m in Sources */,
+				6E9BBA0F178C2BF3001F03CC /* LaunchAgentExample.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E9BBA1B178C3C79001F03CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E9BBA0C178C2BF3001F03CC /* LaunchAgent */;
+			targetProxy = 6E9BBA1A178C3C79001F03CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72B483741576E05600A43F96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B483751576E05600A43F96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		72B4837A1576E05600A43F96 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B4837B1576E05600A43F96 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		72B483801576E05700A43F96 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B483811576E05700A43F96 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		72B483931576E0BA00A43F96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72B483941576E0BA00A43F96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E0D651B178B2E3400806150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LaunchAgentClient/LaunchAgentClient.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
+				PRODUCT_NAME = "LaunchAgent Client";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E0D651C178B2E3400806150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LaunchAgentClient/LaunchAgentClient.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
+				PRODUCT_NAME = "LaunchAgent Client";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E9BBA16178C2BF3001F03CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LaunchAgent/LaunchAgent.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "LaunchAgent-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = U6TV63RN87.com.yvs.LaunchAgent;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E9BBA17178C2BF3001F03CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LaunchAgent/LaunchAgent.entitlements;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "LaunchAgent-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = U6TV63RN87.com.yvs.LaunchAgent;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		72B483831576E05700A43F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		72B483841576E05700A43F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0D651A178B2E3400806150 /* Build configuration list for PBXNativeTarget "LaunchAgent Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0D651B178B2E3400806150 /* Debug */,
+				6E0D651C178B2E3400806150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E9BBA15178C2BF3001F03CC /* Build configuration list for PBXNativeTarget "LaunchAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E9BBA16178C2BF3001F03CC /* Debug */,
+				6E9BBA17178C2BF3001F03CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72B483611576E05600A43F96 /* Build configuration list for PBXProject "LaunchAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72B483831576E05700A43F96 /* Debug */,
+				72B483841576E05700A43F96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72B4835E1576E05600A43F96 /* Project object */;
+}
