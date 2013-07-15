@@ -9,7 +9,6 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	// Setup our connection to the launch item's service.
-	// This will start the launch item if it isn't already running.
 	NSError *error = nil;
 	NSXPCConnection *connection;
 	connection = [[NSXPCConnection alloc]
