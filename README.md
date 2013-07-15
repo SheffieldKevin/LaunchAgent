@@ -8,16 +8,13 @@ I’ve created the project using Xcode 5 on 10.9.
 
 I’ve code signed and sandboxed both the LaunchAgent and the application. This is necessary. The bundle identifier and the bundle name must be the same. You’ll need to update the project settings and replace yvs with your trading name and your Team ID. The Team ID is the first part of the bundle identifier and name for the LaunchAgent, so for me I get the following.
 
-- Bundle Identifier
-—- U6TV63RN87.com.yvs.LaunchAgent
-* Bundle name with extension:
-** U6TV63RN87.com.yvs.LaunchAgent.app
-* Mac Service name published by LaunchAgent
-** U6TV63RN87.com.yvs.LaunchAgent
+* Bundle Identifier: U6TV63RN87.com.yvs.LaunchAgent
+* Bundle name with extension: U6TV63RN87.com.yvs.LaunchAgent.app
+* Mac Service name published by LaunchAgent: U6TV63RN87.com.yvs.LaunchAgent
 
 For the Application and the LaunchAgent to have the necessary permissions to be allowed to communicate between each other they must both have the same security group setting. This is set in the entitlements file for both:
 
-The key: com.apple.security.application-group in my case is set to:
+The key: `com.apple.security.application-group` in my case is set to:
 $(TeamIdentifier)com.yvs
 
 You’ll need to replace the yvs with your own value.
@@ -26,9 +23,9 @@ You can build the application now, the LaunchAgent is a build dependency of the 
 
 After making the appropriate changes above you’ll need to create your own LaunchAgent plist file. My version of the LaunchAgent plist file lives in the root folder of the git repository. I would duplicate the plist file because the original is part of the git rep. Rename the duplicated plist file to the same as the LaunchAgent bundle identifier but keep the .plist file extension. Open the plist file and replace all references to the Team ID and trading name with your own. You’ll need to update the full path to the executable file which is in the LaunchAgent bundle built when you built the Application. The full path is specified as the first Program Arguments value. Once you’ve done that you can then copy the plist file to ~/Library/LaunchAgents/ .
 
-You can use the launchctl command with the load option to load the Mach Service to the system immediately or you can logout and log back in again and the system will now know about the existence of the Mach Service.
+You can use the `launchctl` command with the load option to load the Mach Service to the system immediately or you can logout and log back in again and the system will now know about the existence of the Mach Service.
 
-Once the service is registered you can stop and start it using the launchtl command.
+Once the service is registered you can stop and start it using the `launchctl` command.
 
 `launchctl start U6TV63RN87.com.yvs.LaunchAgent`
 
@@ -46,4 +43,5 @@ You can turn off keeping the launch agent alive indefinitely, and you can specif
 
 ## Credits and Contact
 
-LaunchAgent created by [Sheffield Kevin](https://github.com/SheffieldKevin) and you can find him under his alias [Cocoa Kevin](https://twitter.com/CocoaKevin)
+LaunchAgent created by [Sheffield Kevin](https://github.com/SheffieldKevin) and on twitter you can find him at [Cocoa Kevin](https://twitter.com/CocoaKevin)
+
