@@ -8,8 +8,8 @@ I’ve created the project using Xcode 5 on 10.9.
 
 I’ve code signed and sandboxed both the LaunchAgent and the application. This is necessary. The bundle identifier and the bundle name must be the same. You’ll need to update the project settings and replace yvs with your trading name and your Team ID. The Team ID is the first part of the bundle identifier and name for the LaunchAgent, so for me I get the following.
 
-* Bundle Identifier
-** U6TV63RN87.com.yvs.LaunchAgent
+- Bundle Identifier
+—- U6TV63RN87.com.yvs.LaunchAgent
 * Bundle name with extension:
 ** U6TV63RN87.com.yvs.LaunchAgent.app
 * Mac Service name published by LaunchAgent
@@ -30,9 +30,9 @@ You can use the launchctl command with the load option to load the Mach Service 
 
 Once the service is registered you can stop and start it using the launchtl command.
 
-launchctl start U6TV63RN87.com.yvs.LaunchAgent
+`launchctl start U6TV63RN87.com.yvs.LaunchAgent`
 
-launchctl stop U6TV63RN87.com.yvs.LaunchAgent
+`launchctl stop U6TV63RN87.com.yvs.LaunchAgent`
 
 Running the application and then sending the first message to the LaunchAgent will automatically start the LaunchAgent service so start is not strictly necessary in this case.
 
@@ -44,3 +44,6 @@ In Xcode I’ve set up the run section in the scheme for the LaunchAgent that it
 
 You can turn off keeping the launch agent alive indefinitely, and you can specify the idle time before the launch agent will exit. Change the number in the text field and click Update idle time to inform the LaunchAgent how long it should stay alive for.
 
+## Credits and Contact
+
+LaunchAgent created by [Sheffield Kevin](https://github.com/SheffieldKevin) and you can find him under his alias [Cocoa Kevin](https://twitter.com/CocoaKevin)
