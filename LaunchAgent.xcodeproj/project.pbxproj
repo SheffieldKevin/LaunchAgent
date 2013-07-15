@@ -40,7 +40,6 @@
 		6EE3A7A117903D3F00C6A53B /* LaunchAgent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LaunchAgent-Info.plist"; sourceTree = "<group>"; };
 		728BAAC41577ED3200632353 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		728BAACC1577F45800632353 /* LaunchAgent.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LaunchAgent.entitlements; sourceTree = "<group>"; };
-		728BAAD11578269200632353 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		72B4836B1576E05600A43F96 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		72B4836E1576E05600A43F96 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		72B4836F1576E05600A43F96 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -84,7 +83,6 @@
 		72B4835C1576E05600A43F96 = {
 			isa = PBXGroup;
 			children = (
-				728BAAD11578269200632353 /* ReadMe.txt */,
 				72B4839F1576E90400A43F96 /* Shared Sources */,
 				72B483711576E05600A43F96 /* LaunchAgentClient */,
 				72B483901576E0BA00A43F96 /* LaunchAgent */,

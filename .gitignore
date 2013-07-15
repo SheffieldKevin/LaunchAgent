@@ -1,5 +1,7 @@
 # xcode noise
 build/*
+DerivedData/*
+project.xcworkspace/*
 *.pbxuser
 *.mode1v3
 *.mode2v3

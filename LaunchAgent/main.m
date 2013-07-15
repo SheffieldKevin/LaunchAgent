@@ -1,5 +1,3 @@
-// Usual Apple 2012 Copyright agreement. 
-
 #import <Foundation/Foundation.h>
 #import "LaunchAgentExample.h"
 

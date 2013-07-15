@@ -1,5 +1,3 @@
-// Usual Apple 2012 Copyright message.
-
 @import Foundation;
 #import "Interfaces.h"
 

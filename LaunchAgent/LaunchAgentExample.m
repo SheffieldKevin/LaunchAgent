@@ -7,9 +7,8 @@ static NSXPCListener *theListener;
 
 @interface LaunchAgentExample ()
 
-@property (assign) BOOL keepAlive;
+@property (assign) BOOL keepAlive; // Keep alive no matter how short/long the idle time.
 @property (assign) NSInteger idleTime; // When !keepAlive idleTime is time to live
-// @property (assign) BOOL activeSinceTimerSet; // If any activity has been set since timer started.
 @property (strong) NSTimer *killTimer; // If the timer fires the launch agent could exit.
 
 - (void)exitLaunchAgent:(NSTimer *)theTimer;
@@ -51,41 +50,39 @@ static NSXPCListener *theListener;
 
 - (void)exitLaunchAgent:(NSTimer *)killTimer
 {
-/*
-	if (!self.keepAlive && !self.activeSinceTimerSet)
-		exit(0);
-	
-	self.activeSinceTimerSet = NO;
-	self.killTimer = NULL;
-	[self keepAgentAlive:self.keepAlive];
-*/
 	exit(0);
 }
 
+// In relation to creating and deleting the timer, by posting blocks to the same
+// queue for both the creating and removal of the NSTimer will achieve the necessary
+// atomic separation. The reason they are being posted to the main queue is that
+// it makes life easier if the NSTimer is created on the main queue.
 - (void)createKillTimer
 {
-	if (!self.keepAlive)
+	dispatch_async(dispatch_get_main_queue(), ^
 	{
-//		self.activeSinceTimerSet = NO;
-		dispatch_async(dispatch_get_main_queue(), ^
+		if (!self.keepAlive)
 		{
 			self.killTimer = [NSTimer
-						  scheduledTimerWithTimeInterval:(NSTimeInterval)self.idleTime
-												  target:self
-												selector:@selector(exitLaunchAgent:)
-												userInfo:nil
-												 repeats:NO];
-		});
-	}
+					  scheduledTimerWithTimeInterval:(NSTimeInterval)self.idleTime
+											  target:self
+											selector:@selector(exitLaunchAgent:)
+											userInfo:nil
+											 repeats:NO];
+		}
+	});
 }
 
 - (void)invalidateAndRemoveKillTimer
 {
-	if (self.killTimer)
+	dispatch_async(dispatch_get_main_queue(), ^
 	{
-		[self.killTimer invalidate];
-		self.killTimer = NULL;
-	}
+		if (self.killTimer)
+		{
+			[self.killTimer invalidate];
+			self.killTimer = NULL;
+		}
+	});
 }
 
 - (void)invalidateOldTimerAndCreateNew
