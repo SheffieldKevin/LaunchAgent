@@ -34,6 +34,8 @@ In Xcode I’ve set up the run section in the scheme for the LaunchAgent that it
 
 You can turn off keeping the launch agent alive indefinitely, and you can specify the idle time before the launch agent will exit. Change the number in the text field and click Update idle time to inform the LaunchAgent how long it should stay alive for.
 
+The get a random number button is purely to test that xpc is working. The other options are to make it possible to play around with the lifetime of the launch agent.
+
 ## Credits and Contact
 
 LaunchAgent created by [Sheffield Kevin](https://github.com/SheffieldKevin) and on twitter you can find him at [Cocoa Kevin](https://twitter.com/CocoaKevin)
