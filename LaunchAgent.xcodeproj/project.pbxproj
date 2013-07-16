@@ -343,10 +343,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LaunchAgentClient/LaunchAgentClient.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
 				PRODUCT_NAME = "LaunchAgent Client";
+				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -356,10 +357,11 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LaunchAgentClient/LaunchAgentClient.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
 				PRODUCT_NAME = "LaunchAgent Client";
+				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -369,10 +371,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LaunchAgent/LaunchAgent.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgent-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = U6TV63RN87.com.yvs.LaunchAgent;
+				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -382,10 +386,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = LaunchAgent/LaunchAgent.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgent-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = U6TV63RN87.com.yvs.LaunchAgent;
+				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -394,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -409,14 +416,15 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
@@ -424,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -433,13 +442,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
