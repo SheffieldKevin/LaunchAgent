@@ -342,11 +342,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
 				PRODUCT_NAME = "LaunchAgent Client";
-				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -355,11 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
 				PRODUCT_NAME = "LaunchAgent Client";
-				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -368,12 +368,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgent-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = U6TV63RN87.com.yvs.LaunchAgent;
-				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -382,12 +382,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgent-Info.plist";
 				MACH_O_TYPE = mh_execute;
 				PRODUCT_NAME = U6TV63RN87.com.yvs.LaunchAgent;
-				PROVISIONING_PROFILE = "44065E78-44BE-4382-984B-D538E1A5B81E";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -4,9 +4,9 @@ LaunchAgent is an example project for getting a LaunchAgent up and running and p
 
 ##Info
 
-In this branch I’ve updated the project to work with Xcode 4.6 on 10.9. I’ve also removed sandboxing. Communication still seems to work.
+In this branch I’ve updated the project to work with Xcode 4.6 on 10.9. I’ve also removed sandboxing. XPC communication still seems to work.
 
-I’ve code signed. The bundle identifier and the bundle name must be the same. You’ll need to update the project settings and replace yvs with your trading name and your Team ID. The Team ID is the first part of the bundle identifier and name for the LaunchAgent, so for me I get the following.
+I’ve code signed both the LaunchAgent and its client application. The bundle identifier and the bundle name must be the same. You’ll need to update the project settings and replace yvs with your trading name and your Team ID. The Team ID is the first part of the bundle identifier and name for the LaunchAgent, so for me I get the following.
 
 * Bundle Identifier: U6TV63RN87.com.yvs.LaunchAgent
 * Bundle name with extension: U6TV63RN87.com.yvs.LaunchAgent.app
