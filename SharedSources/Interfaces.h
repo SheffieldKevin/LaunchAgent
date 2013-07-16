@@ -1,4 +1,5 @@
-@import Foundation;
+// @import Foundation;
+#import <Foundation/Foundation.h>
 
 @protocol Agent
 

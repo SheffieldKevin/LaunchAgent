@@ -1,4 +1,3 @@
-@import Foundation;
 #import "LaunchAgentExample.h"
 
 #include <stdlib.h>
@@ -19,6 +18,10 @@ static NSXPCListener *theListener;
 @end
 
 @implementation LaunchAgentExample
+
+@synthesize keepAlive;
+@synthesize idleTime;
+@synthesize killTimer;
 
 -(id)init
 {
