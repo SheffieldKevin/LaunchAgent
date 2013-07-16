@@ -342,7 +342,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LaunchAgentClient/LaunchAgentClient.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
@@ -356,7 +355,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LaunchAgentClient/LaunchAgentClient.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
@@ -370,7 +368,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LaunchAgent/LaunchAgent.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgent-Info.plist";
@@ -385,7 +382,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LaunchAgent/LaunchAgent.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer: Kevin Meaney (W5PN2E85D7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "LaunchAgent-Info.plist";
