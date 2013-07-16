@@ -6,16 +6,13 @@ LaunchAgent is an example project for getting a LaunchAgent up and running and p
 
 I’ve created the project using Xcode 5 on 10.9.
 
-I’ve code signed and sandboxed both the LaunchAgent and the application. This is necessary. The bundle identifier and the bundle name must be the same. You’ll need to update the project settings and replace yvs with your trading name and your Team ID. The Team ID is the first part of the bundle identifier and name for the LaunchAgent, so for me I get the following.
+I’ve code signed the LaunchAgent and the application. The bundle identifier and the bundle name must be the same. You’ll need to update the project settings and replace yvs with your trading name and your Team ID. The Team ID is the first part of the bundle identifier and name for the LaunchAgent, so for me I get the following.
 
 * Bundle Identifier: U6TV63RN87.com.yvs.LaunchAgent
 * Bundle name with extension: U6TV63RN87.com.yvs.LaunchAgent.app
 * Mac Service name published by LaunchAgent: U6TV63RN87.com.yvs.LaunchAgent
 
 For the Application and the LaunchAgent to have the necessary permissions to be allowed to communicate between each other they must both have the same security group setting. This is set in the entitlements file for both:
-
-The key: `com.apple.security.application-group` in my case is set to:
-$(TeamIdentifier)com.yvs
 
 You’ll need to replace the yvs with your own value.
 
@@ -43,5 +40,7 @@ You can turn off keeping the launch agent alive indefinitely, and you can specif
 
 ## Credits and Contact
 
-LaunchAgent created by [Sheffield Kevin](https://github.com/SheffieldKevin) and on twitter you can find him at [Cocoa Kevin](https://twitter.com/CocoaKevin)
+LaunchAgent created by [Sheffield Kevin](https://github.com/SheffieldKevin) and on twitter you can find him at [Cocoa Kevin](https://twitter.com/CocoaKevin) and you can contact me by e-mail at: ktam[at]yvs.eu.com
 
+##License
+See the LICENSE file. A MIT license.
