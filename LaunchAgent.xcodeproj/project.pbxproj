@@ -13,6 +13,8 @@
 		6E0D6515178B2E3400806150 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72B483741576E05600A43F96 /* InfoPlist.strings */; };
 		6E0D6516178B2E3400806150 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 72B4837A1576E05600A43F96 /* Credits.rtf */; };
 		6E0D6517178B2E3400806150 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72B483801576E05700A43F96 /* MainMenu.xib */; };
+		6E85CECD1796D3CD004B913E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B4838E1576E0BA00A43F96 /* Foundation.framework */; };
+		6E85CED01796D3CD004B913E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E85CECF1796D3CD004B913E /* main.m */; };
 		6E9BBA0E178C2BF3001F03CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B483971576E0BA00A43F96 /* main.m */; };
 		6E9BBA0F178C2BF3001F03CC /* LaunchAgentExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B4839D1576E2B500A43F96 /* LaunchAgentExample.m */; };
 		6E9BBA11178C2BF3001F03CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B4838E1576E0BA00A43F96 /* Foundation.framework */; };
@@ -33,8 +35,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6E85CECA1796D3CD004B913E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6E0D651D178B2E3400806150 /* LaunchAgent Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaunchAgent Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E85CECC1796D3CD004B913E /* smig */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = smig; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E85CECF1796D3CD004B913E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E9BBA18178C2BF3001F03CC /* U6TV63RN87.com.yvs.LaunchAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = U6TV63RN87.com.yvs.LaunchAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE3A79F17903D2B00C6A53B /* LaunchAgentClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LaunchAgentClient-Info.plist"; sourceTree = "<group>"; };
 		6EE3A7A117903D3F00C6A53B /* LaunchAgent-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LaunchAgent-Info.plist"; sourceTree = "<group>"; };
@@ -69,6 +85,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E85CEC91796D3CD004B913E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E85CECD1796D3CD004B913E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E9BBA10178C2BF3001F03CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,12 +104,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E85CECE1796D3CD004B913E /* smig */ = {
+			isa = PBXGroup;
+			children = (
+				6E85CECF1796D3CD004B913E /* main.m */,
+			);
+			path = smig;
+			sourceTree = "<group>";
+		};
 		72B4835C1576E05600A43F96 = {
 			isa = PBXGroup;
 			children = (
 				72B4839F1576E90400A43F96 /* Shared Sources */,
 				72B483711576E05600A43F96 /* LaunchAgentClient */,
 				72B483901576E0BA00A43F96 /* LaunchAgent */,
+				6E85CECE1796D3CD004B913E /* smig */,
 				72B4836A1576E05600A43F96 /* Frameworks */,
 				72B483681576E05600A43F96 /* Products */,
 			);
@@ -96,6 +129,7 @@
 			children = (
 				6E0D651D178B2E3400806150 /* LaunchAgent Client.app */,
 				6E9BBA18178C2BF3001F03CC /* U6TV63RN87.com.yvs.LaunchAgent.app */,
+				6E85CECC1796D3CD004B913E /* smig */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +229,23 @@
 			productReference = 6E0D651D178B2E3400806150 /* LaunchAgent Client.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6E85CECB1796D3CD004B913E /* smig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E85CED51796D3CD004B913E /* Build configuration list for PBXNativeTarget "smig" */;
+			buildPhases = (
+				6E85CEC81796D3CD004B913E /* Sources */,
+				6E85CEC91796D3CD004B913E /* Frameworks */,
+				6E85CECA1796D3CD004B913E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smig;
+			productName = smig;
+			productReference = 6E85CECC1796D3CD004B913E /* smig */;
+			productType = "com.apple.product-type.tool";
+		};
 		6E9BBA0C178C2BF3001F03CC /* LaunchAgent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E9BBA15178C2BF3001F03CC /* Build configuration list for PBXNativeTarget "LaunchAgent" */;
@@ -245,6 +296,7 @@
 			targets = (
 				6E0D650A178B2E3400806150 /* LaunchAgent Client */,
 				6E9BBA0C178C2BF3001F03CC /* LaunchAgent */,
+				6E85CECB1796D3CD004B913E /* smig */,
 			);
 		};
 /* End PBXProject section */
@@ -280,6 +332,14 @@
 			files = (
 				6EE3A79D1790025E00C6A53B /* AppDelegate.m in Sources */,
 				6E0D650E178B2E3400806150 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E85CEC81796D3CD004B913E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E85CED01796D3CD004B913E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +419,53 @@
 				INFOPLIST_FILE = "LaunchAgentClient-Info.plist";
 				PRODUCT_NAME = "LaunchAgent Client";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6E85CED61796D3CD004B913E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smig/smig-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E85CED71796D3CD004B913E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "smig/smig-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -448,6 +555,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6E85CED51796D3CD004B913E /* Build configuration list for PBXNativeTarget "smig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E85CED61796D3CD004B913E /* Debug */,
+				6E85CED71796D3CD004B913E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		6E9BBA15178C2BF3001F03CC /* Build configuration list for PBXNativeTarget "LaunchAgent" */ = {
 			isa = XCConfigurationList;
